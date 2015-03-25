@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Long shadow css generator</title>
+		<meta name="description" content="Easy to use text shadow generator">
+		<meta name="author" content="Anthony Dry">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style-min.css">
+	</head>
+	<body>
+	<div class="header">
+		<h1>Long shadow generator</h1>
+	</div>
+	<div class="content">
+		<div class="wrapper">
+			<div class="left-column">
+				<h3>Choose shadow direction:</h3>
+				<div data-type-value="1" class="shadow-left-top direction"><span>Left</span></div>
+				<div data-type-value="2" class="shadow-right-top direction"><span>Right</span></div>
+				<div></div>
+				<div data-type-value="3" class="shadow-left active direction"><span>Left</span></div>
+				<div data-type-value="4" class="shadow-right direction"><span>Right</span></div>
+				<h3>Set background color:</h3>
+				<div class="input-box">
+				<div class="color-show bgColor" style="background-color:#82B5C3"><img src="paintbrush.png" alt="pick a color"></div>
+					<input type="color" id="BgColorPick" class="form-color" value="#82B5C3">
+		          	<input type="text" id="BgEnterColor" class="form-text" value="#82B5C3">
+		            <button class="form-btn" type="button" id="bgClick">OK</button>
+		        </div>
+		        <h3>Set shadow color:</h3>
+				<div class="input-box">
+				<div class="color-show shadowColor" style="background-color:#577a84"><img src="paintbrush.png" alt="pick a color"></div>
+					<input type="color" id="ShadowColorPick" class="form-color" value="#577A84">
+		          	<input type="text" id="ShadowEnterColor" class="form-text" value="#577A84">
+		            <button class="form-btn" type="button" id="shadowClick">OK</button>
+		        </div>
+		        <h3>Set text color:</h3>
+				<div class="input-box">
+				<div class="color-show textColor" style="background-color:#ffffff"><img src="paintbrush.png" alt="pick a color"></div>
+					<input type="color" id="TextColorPick" class="form-color" value="#ffffff">
+		          	<input type="text" id="TextEnterColor" class="form-text" value="#ffffff">
+		            <button class="form-btn" type="button" id="textClick">OK</button>
+		        </div>
+			</div>
+			<div class="right-column">
+				<h3>Preview:</h3>
+				<div class="preview-window">
+					<p>Shadow</p>
+				</div>
+				<h3>CSS:</h3>
+				<div class="generated-code"></div>
+			</div>
+		</div>
+	</div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="script-min.js" type="text/javascript"></script>
+	</body>
+</html>
